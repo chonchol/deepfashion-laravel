@@ -1,0 +1,583 @@
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Regular'), url('ProximaNova-Regular.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+body {
+    font-family: 'Proxima Nova Regular';
+    font-size: 16px;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    margin-top: 0;
+    font-family: 'Proxima Nova Regular';
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+span {
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+}
+
+.navbar-brand .mobile {
+    display: none;
+}
+
+/*.Logo-Horizontal-Dark {
+  width: 172px;
+  height: 50px;
+  object-fit: contain;
+  }*/
+
+nav {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.nav-menu {
+    margin: auto 22px;
+}
+
+.nav-item .nav-link span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4742ec;
+}
+
+.nav-button {
+    width: 183px;
+    height: 45px;
+    border-radius: 22.5px;
+    box-shadow: -2px 2px 20px 0 rgba(73, 66, 236, 0.29);
+    background-image: linear-gradient(104deg, #483dec, #4074eb);
+}
+
+header {
+    padding-bottom: 35px;
+}
+
+header h2 {
+    font-size: 32px;
+    color: #4742ec;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.83;
+    color: #222222;
+}
+
+.head-img {
+    padding: 0;
+    background-image: url('../images/Oval.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.head-img img {
+    float: right;
+}
+
+.head-text {
+    padding: 108px 0px 0px 205px;
+}
+
+.model-image {
+    background-image: linear-gradient(123deg, #483dec, #4074eb);
+    padding: 60px 0px;
+}
+
+.model-image h2 {
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.model-image p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.88;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0px;
+}
+
+.image-main {
+    padding: 30px 0px;
+}
+
+.image-main .col-md-2, .image-main .col-md-4 {
+    padding: 0px;
+}
+
+.model-img-btn {
+    width: 216px;
+    height: 53px;
+    border-radius: 26.5px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.17);
+    background-color: #ffffff;
+    color: #4742ec;
+}
+
+.wrapper-texting-area {
+    text-align: center;
+}
+
+.wrapper-texting-area h4 {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.wrapper-texting-area p {
+
+    line-height: 1.75;
+    text-align: center;
+    color: #ffffff;
+}
+
+.texting-block-model {
+    padding: 30px 0px;
+}
+
+.texting-block-model img {
+    width: 46px;
+    height: 46px;
+}
+
+.image-block {
+    float: left;
+}
+
+.image-block img {
+    margin-bottom: 15px;
+    margin-right: 31px;
+}
+
+/*.last-bl img{
+margin-right: 0px!important;
+    margin-left: 3px;
+    }*/
+
+.details {
+    padding: 30px 0px 15px 0px;
+}
+
+.details h4 {
+    font-size: 24px;
+    line-height: normal;
+    color: #4263eb;
+
+}
+
+.details h4 span {
+    font-weight: bold;
+    text-decoration: underline #FAE035;
+}
+
+.details p {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #222222;
+}
+
+.algo-block {
+    margin: auto 0px;
+}
+
+.text-block {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.marketing {
+    background-color: #f5f8ff;
+    padding: 55px 0;
+}
+
+.marketing h5 {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    color: #4742ec;
+    margin-bottom: 35px;
+}
+
+.market-upload p {
+    color: #878787;
+    /* padding: 0; */
+    margin: 25px 0px 0px 25px;
+    max-width: 90px;
+    text-align: center;
+
+}
+
+.market-upload img {
+    max-width: 112px;
+}
+
+.market-upload {
+    padding: 0;
+}
+
+.generated-photo {
+    padding: 30px 0px 15px 0px;
+    border-radius: 7px;
+    box-shadow: 0 0 20px 0 rgba(75, 124, 255, 0.19);
+    border: solid 1.5px #4742ec;
+    background-color: rgba(18, 189, 42, 0);
+
+}
+
+.generated-photo img {
+    margin-left: 21px;
+    margin-bottom: 21px;
+}
+
+.text-block h4 {
+
+    font-size: 24px;
+    line-height: normal;
+    color: #4263eb;
+}
+
+.text-block p {
+    font-size: 16px;
+    line-height: 2;
+    color: #222222;
+}
+
+.card-txt-position {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing-section {
+    padding: 40px 0px;
+}
+
+.pricing-header h2 {
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+    color: #4742ec;
+}
+
+.pricing-section .card-common {
+    border-radius: 6px;
+    border: solid 1px #dcdcdc;
+    background-color: #ffffff;
+}
+
+.pricing-section .card-basic {
+    border-radius: 6px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.11);
+    border: solid 1px #e9eeff;
+    background-color: #ffffff;
+}
+
+.pricing-bottom p {
+    text-align: left;
+    font-size: 16px;
+    line-height: .56;
+    color: #222222;
+}
+
+.pricing-bottom {
+
+    border-top: solid 1px #dcdcdc;
+    padding: 5% 0% 0% 10%;
+}
+
+.card-header {
+    text-transform: uppercase;
+}
+
+.card .common {
+    border-radius: 6px;
+    background-color: #e9eeff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #4742ec;
+}
+
+.card .basic {
+    border-radius: 6px;
+    background-color: #4742ec;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.head-price {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    color: #4742ec;
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 0;
+
+}
+
+.card-body button {
+    margin: 30px 0px;
+}
+
+.card-title {
+    font-size: 67px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: #4742ec;
+    margin: 25px 0px;
+}
+
+.mo {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: #4742ec;
+}
+
+.offer li {
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222222;
+}
+
+.price-btn-common {
+    width: 75%;
+    height: 53px;
+    border-radius: 26.5px;
+    box-shadow: -3px 3px 20px 0 rgba(73, 66, 236, 0.33);
+    border: solid 1px #4842ec;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #4742ec;
+}
+
+.price-btn-basic {
+    width: 75%;
+    height: 53px;
+    border-radius: 26.5px;
+    box-shadow: -3px 3px 20px 0 rgba(73, 66, 236, 0.33);
+    background-image: linear-gradient(104deg, #483dec, #4074eb);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+
+.about {
+    background-image: linear-gradient(100deg, #483dec, #4074eb);
+    margin-top: 100px;
+}
+
+.about img {
+    width: 100%;
+    margin-bottom: -100px;
+    position: relative;
+    bottom: 54px;
+}
+
+.about .desc-section {
+    margin: auto 0;
+}
+
+.about h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 2;
+    color: #ffffff;
+}
+
+#contact {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 70px;
+}
+
+#contact h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #4742ec;
+}
+
+#contact p {
+    margin: 22px 0px;
+    font-size: 16px;
+    line-height: 2;
+    text-align: center;
+    color: #222222;
+}
+
+.btn-submit {
+    width: 216px;
+    height: 53px;
+    border-radius: 26.5px;
+    box-shadow: -3px 3px 20px 0 rgba(73, 66, 236, 0.33);
+    background-image: linear-gradient(104deg, #483dec, #4074eb);
+}
+
+.custom-control {
+    margin: 25px 0px;
+}
+
+.custom-checkbox .custom-control-label::before {
+    margin-top: -2px;
+}
+
+.button-area {
+    text-align: center;
+    margin-top: 35px;
+}
+
+#contact label {
+    font-size: 16px;
+    color: #222222;
+}
+
+.form-sizing {
+    margin: 0 auto;
+}
+
+footer small {
+    font-size: 16px;
+    color: #222222;
+}
+
+footer h5 {
+    font-size: 16px;
+    color: #4742ec;
+}
+
+footer ul li a, footer small {
+
+    font-size: 16px;
+    line-height: 1.75;
+    color: #222222;
+}
+
+/* Login */
+
+#passHelp {
+    font-size: 16px;
+    color: #4742ec;
+    text-decoration: underline;
+}
+
+#passHelp a {
+    color: #4742ec;
+}
+
+
+.btn-login {
+    width: 100%;
+    height: 45px;
+    border-radius: 22.5px;
+    background-image: linear-gradient(95deg, #483dec, #4074eb);
+}
+
+.login, .password-area, .password-area-con {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.login h2, .password-area h2, .password-area-con h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #4742ec;
+    padding-bottom: 25px;
+    max-width: 490px;
+    margin: 0 auto;
+}
+
+.login p {
+    font-weight: 600;
+    text-align: center;
+    color: #4742ec;
+    padding: 25px;
+}
+
+.login form label {
+
+    font-size: 16px;
+    color: #222222;
+
+}
+
+.password-area .form-group p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.password-area-con .form-group p {
+    max-width: 485px;
+    font-size: 18px;
+    text-align: center;
+    color: #222222;
+    margin: 0 auto;
+}
+
+.alert-danger ul{
+    margin-bottom: 0px;
+}

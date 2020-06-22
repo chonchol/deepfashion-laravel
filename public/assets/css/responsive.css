@@ -1,0 +1,265 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+	.container{
+		max-width: 576px;
+	}
+
+	.nav-menu {
+		margin: auto 12px;
+	}
+
+	.navbar-brand .mobile {
+		display: block;
+	}
+	.navbar-brand .desktop {
+		display: none;
+	}
+
+	.nav-button {
+		width: 135px;
+	}
+
+	.texting-block-model {
+		padding: 15px 50px;
+	}
+
+	.market-upload {
+		padding: 0;
+		text-align: center;
+	}
+
+	.market-upload p {
+		color: #878787;
+		padding: 0;
+		margin: 0 auto;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.head-text {
+		padding: 25px 30px 25px 30px;
+	}
+
+	.generated-photo img {
+		margin-left: 11px;
+		margin-bottom: 15px;
+		width: 20%;
+	}
+
+	.image-main .only-destop{
+		display: none;
+	}
+
+	.image-main .col-sm-8{
+		padding: 0px;
+	}
+
+	.image-block img {
+		margin-bottom: 4px;
+	}
+
+	.about img{
+		display: none;
+	}
+	.about{
+		padding: 35px;
+	}
+	footer{
+		text-align: center;
+	}
+
+	.image-uploader {
+		padding: 20px;
+	}
+	#progressbar li{
+		width: 33%;
+	}
+
+	.main-progress{
+		width: 100%;
+		left: 0%;
+	}
+
+	.gallery-wrap{
+		padding: 0px;
+	}
+	/* registration */
+
+	.all-from-wrap, .plan-wrap{
+		padding: 0px!important;
+	}
+
+	.btn-file-add{
+		width: 78%;
+	}
+
+	/*upload*/
+
+	#progressbar{
+		float: none;
+		margin-left: 15px;
+	}
+
+	.result-step #progressbar{
+		margin-left: 0px;
+	}
+
+	.photo-result .count-photos button{
+		float: none;
+		margin-top: 20px;
+	}
+
+	.imglist {
+		padding: 10px 60px;
+	}
+
+	.for-uploading hr.hr-line{
+		width: 88%;
+	}
+
+	.next-btn-area {
+		text-align: center;
+		margin-top: 35px;
+		float: none;
+	}
+	.error img {
+		float: none;
+	}
+
+	#menuone .custom-control{
+		padding-left: 24px;
+	}
+	.form-main .padding-handle{
+		padding: 0px 12px 0px 20px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.market-upload img {
+		max-width: 98px;
+	}
+	.container{
+		max-width: 768px;
+	}
+
+	.nav-menu {
+		margin: auto 12px;
+	}
+
+
+
+	.photo-result .col-md-2 {
+		-ms-flex: 0 0 32.666667%;
+		flex: 0 0 32.666667%;
+		max-width: 32.666667%;
+	}
+
+	.nav-button {
+		width: 135px;
+	}
+
+	.texting-block-model {
+		padding: 15px 50px;
+	}
+
+	.market-upload {
+		padding: 0;
+		text-align: center;
+	}
+
+	.market-upload p {
+		color: #878787;
+		padding: 0;
+		margin: 10px 20px;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.head-text {
+		padding: 25px 30px 25px 30px;
+	}
+
+	.generated-photo img {
+		margin-left: 11px;
+		margin-bottom: 15px;
+		width: 19%;
+	}
+
+
+	.image-main .col-sm-8{
+		padding: 0px;
+	}
+
+	.image-block img {
+		margin-bottom: 4px;
+	}
+
+
+	.about{
+		padding: 35px;
+	}
+
+	/* registration */
+
+	.all-from-wrap, .plan-wrap{
+		padding: 30px;
+	}
+
+	#progressbar{
+		float: none;
+	}
+	.btn-next{
+		width: 100px;
+	}
+
+	#menuone .custom-control{
+		padding-left: 48%;
+	}
+
+	.inner-rectangle {
+		height: 85px;
+
+	}
+	.for-uploading hr.hr-line {
+		width: 56%;
+
+	}
+
+	.about img{
+		bottom: 0;
+	}
+	.form-header span {
+
+		margin: 0px 24px;
+	}
+
+}
+
+
+/* Portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+	.head-text {
+		padding: 100px 0px 0px 50px;
+	}
+	.plan-wrap {
+		padding: 0% 10% 10% 4%;
+	}
+
+}
+
+@media (min-width: 769px) and (max-width: 1400px) {
+
+	.head-text {
+		padding: 100px 8px 0px 50px;
+	}
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1281px) and (max-width: 2000px;){ 
+	.head-text {
+		padding: 100px 8px 0px 50px;
+	}
+
+}

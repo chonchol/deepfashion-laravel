@@ -1,0 +1,518 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Proxima Nova Regular'), url('ProximaNova-Regular.woff') format('woff');
+}
+
+*{margin: 0;padding: 0;border: 0}
+
+
+body {
+  font-family: 'Proxima Nova Regular';
+  font-size: 16px;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+	margin-top: 0;
+	font-family: 'Proxima Nova Regular';
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+span{
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+p{
+	font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+.navbar{
+ background-image: linear-gradient(93deg, #483dec, #4074eb);
+}
+
+.step{
+  background-color: #f8f8f8;
+  padding: 25px 0px;
+}
+
+.main-progress {
+  text-align: center;
+  position: relative;
+  z-index: 99;
+        width: 175%;
+    left: -35%;
+}
+
+/*progressbar*/
+#progressbar {
+  margin: 0;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+  /*    float: right;*/
+}
+
+#progressbar li {
+
+  list-style-type: none;
+  color: #4650ec;
+  font-size: 14px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 600;
+}
+
+#progressbar li:last-child{
+  padding-right: 0px;
+}
+
+
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: block;
+  font-size: 16px;
+  color: #878787;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #c1c1c1;
+}
+
+#progressbar li.success:before{
+  content: url(../../assets/images/tick.svg);
+  font-size: 24px;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #c1c1c1;
+  position: absolute;
+  left: -50%;
+  top: 16px;
+  z-index: -1; /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before, #progressbar li.active:after {
+  background: #4650ec;
+  color: white;
+  border: none;
+}
+
+#progressbar li.success:before, #progressbar li.success:after {
+  background: #12bd2a;
+  color: white;
+  border: none;
+}
+
+#progressbar .success{
+  color: #12bd2a;
+}
+
+#progressbar .not-active{
+  color: #878787;
+}
+
+/*.btn-next {*/
+/*  width: 142px;*/
+/*  height: 45px;*/
+/*  border-radius: 22.5px;*/
+/*  !*  background-color: #c1c1c1;*!*/
+/*  color: #ffffff;*/
+/*  background-image: linear-gradient(108deg, #483dec, #4074eb);*/
+/*}*/
+
+.btn.btn-next.active {
+    width: 142px;
+    height: 45px;
+    border-radius: 22.5px;
+    /*  background-color: #c1c1c1;*/
+    color: #ffffff;
+    background-image: linear-gradient(108deg, #483dec, #4074eb);
+}
+
+.btn.disabled, .btn:disabled{
+    width: 142px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: #c1c1c1;
+    color: #ffffff;
+}
+
+.accordion-padding{
+  margin: 15px 0px;
+}
+
+.form-main h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222222;
+  margin: 20px 0px;
+}
+
+.photo-details{
+  padding-top: 15px;
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 15px;
+}
+
+.photo-details .main-img, .photo-details p{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.photo-details .main-img{
+    border-radius: 3px;
+    border: solid 1px #dcdcdc;
+    padding: 5px;
+}
+
+.photo-details .gen-photo{
+    width: 25px;
+}
+
+.photo-details p{
+  margin: auto 5px;
+}
+
+.form-header{
+  border-top: 1px solid #eeeeee;
+/*  border-bottom: 1px solid #eeeeee;*/
+  padding: 12px 0px;
+  margin: auto 0;
+}
+
+.second-head{
+  border-bottom: 1px solid #eeeeee;
+}
+
+.show{
+  border-top: 1px solid #eeeeee;
+}
+
+.input-group-prepend {
+    margin-right: -30px;
+    z-index: 9999;
+}
+
+.pickr .pcr-button{
+    width: 16px;
+    height: 19px;
+    margin-left: 14px;
+    border: 1px solid #ddd;
+}
+
+.input-group input[type=text]{
+  padding-left: 36px;
+
+}
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child){
+  border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.form-header h3{
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #878787;
+  margin: auto;
+}
+.form-header h3, .form-header span{
+  display: inline-block;
+  vertical-align: middle;
+}
+.form-header span{
+  float: right;
+  color: #878787;
+  font-size: 24px;
+  margin: 0px 44px;
+}
+
+
+.padding-handle{
+  padding: 0px 0px 0px 35px;
+  border-right: 1px solid #eeeeee;
+}
+
+.form-group label{
+  font-size: 15px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.form-control{
+  font-size: 14px;
+  color: black;
+}
+
+input[type="text"]:disabled, .custom-control-input:disabled, select:disabled,.form-control:disabled, .form-control[readonly]{
+  color: #c1c1c1;
+  background-color: #ffffff;
+}
+
+.custom-padd{
+  padding-bottom: 15px;
+}
+
+.custom-control {
+  padding-left: 12rem;
+  padding-bottom: 1rem;
+}
+
+.custom-control-label{
+  font-size: 14px;
+  padding: 3px;
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+  background-color: #4742ec;
+  border-color: #4742ec;
+}
+
+.custom-radio-check {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 5px;
+  cursor: auto;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #999999;
+}
+
+/* Hide the browser's default radio button */
+.custom-radio-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio-check:hover input ~ .checkmark {
+  /*background-color: #ccc;*/
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio-check input:checked ~ .checkmark {
+  background-color: #4742ec;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio-check .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 80%;
+  background: white;
+}
+
+
+
+
+.pad-control-age{
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 0px 40px 0px;
+}
+
+.pad-control-height{
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0px 40px 0px;
+}
+
+
+/* change style balloon */
+/*.tooltip-inner {
+    background-color: rgba(34, 34, 34, 0.83)!important;
+    font-size: 12px!important;
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+    border-bottom-color: rgba(34, 34, 34, 0.83)!important;
+    }*/
+
+    .tooltip-custom {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip-custom .tooltiptext {
+      visibility: hidden;
+      width: 226px;
+      background-color: rgba(34, 34, 34, 0.83);
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 4;
+      top: 125%;
+      left: 310%;
+      font-size: 14px;
+      margin-left: -60px;
+    }
+    .tooltiptext a{
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .tooltip-custom .tooltiptext::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 8%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent rgba(34, 34, 34, 0.83) transparent;
+    }
+
+    .tooltip-custom:hover .tooltiptext {
+      visibility: visible;
+    }
+
+
+    /* jqueryui */
+
+    .pad-control-age .ui-slider .ui-slider-handle, .pad-control-height .ui-slider .ui-slider-handle{
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
+      border: 0px;
+      margin-top: -3px;
+    }
+
+    .pad-control-age .ui-widget-content, .pad-control-height .ui-widget-content{
+      border: 2px solid #dcdcdc!important;
+      background: #ffffff;
+      color: #333333;
+      margin-top: 15px;
+    }
+    .pad-control-age .ui-slider-horizontal, .pad-control-height .ui-slider-horizontal{
+     height: 0px;
+     width: 91%;
+   }
+
+   .pad-control-age .ui-widget-header, .pad-control-height .ui-widget-header{
+    background-color: #c1c1c1;
+  }
+
+ .ui-widget.ui-widget-content{
+  background-color: #ddd;
+}
+
+.ui-dialog .ui-dialog-buttonpane{
+  padding: 0em 1em 0em 0em;
+}
+
+tbody{
+  font-size: 14px;
+}
+
+.ui-colorpicker-hex input, #inputBackColor{
+  text-transform: uppercase;
+}
+
+
+  .cancel-btn{
+    float: right;
+    margin-right: 18px;
+  }
+
+  .custom-margin {
+      margin: auto 0;
+      z-index: 999999;
+  }
+  .next-btn-area {
+    text-align: right;
+    float: right;
+  }
+
+  [aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed {display: none;}
+
+
+  main .theme-container{
+    display: none;
+  }
+
+ .disable-label{
+    color: #999999!important;
+ }
+
+ #age, #height{
+    outline: none;
+    pointer-events: none;
+    color: #999999;
+ }

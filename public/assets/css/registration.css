@@ -1,0 +1,417 @@
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Regular'), url('ProximaNova-Regular.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+
+body {
+    font-family: 'Proxima Nova Regular';
+    font-size: 16px;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin-top: 0;
+    font-family: 'Proxima Nova Regular';
+}
+
+form {
+    display: contents;
+}
+
+.navbar-brand .mobile {
+    display: none;
+}
+
+nav {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.nav-menu {
+    margin: auto 22px;
+}
+
+.nav-item .nav-link span {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4742ec;
+}
+
+.nav-button {
+    width: 183px;
+    height: 45px;
+    border-radius: 22.5px;
+    box-shadow: -2px 2px 20px 0 rgba(73, 66, 236, 0.29);
+    background-image: linear-gradient(104deg, #483dec, #4074eb);
+}
+
+
+.registration-form h2, .plan-area h2 {
+    margin: 30px 0px;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4742ec;
+}
+
+.profile-form {
+    border-bottom: solid 1px #dcdcdc;
+}
+
+.profile-form form {
+    margin-bottom: 35px;
+}
+
+.profile-form h3 {
+
+    font-size: 16px;
+    color: #222222;
+}
+
+.btn-paypal {
+    width: 100%;
+    height: 45px;
+    background-color: #ffc439;
+}
+
+
+.plan-main {
+    border-left: solid 1px #dcdcdc;
+    background-color: #fcfcfc;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.date-separator {
+    margin-left: 10px;
+}
+
+.plan-area small {
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #878787;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.plan-bottom h4 {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+    margin-top: 25px;
+}
+
+
+.plan-middle {
+    border-top: solid 1px #979797;
+    border-bottom: solid 1px #979797;
+    padding: 30px 0px;
+}
+
+.plan-middle .dropdown {
+    padding-bottom: 22px;
+}
+
+.plan-middle .dropdown li {
+    float: right;
+    font-size: 44px;
+    font-weight: 600;
+    color: #4742ec;
+    margin-top: -18px;
+}
+
+.plan-middle .list {
+    padding: 0px 18px;
+}
+
+.plan-middle .dropdown span {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+    display: inline-flex;
+    /*display: -webkit-inline-box;*/
+}
+
+.plan-middle .dropdown .dropdown-toggle::after {
+    margin-top: 10px;
+}
+
+.plan-bottom span {
+
+    float: right;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4742ec;
+}
+
+.plan-bottom button {
+    width: 100%;
+    height: 45px;
+    border-radius: 22.5px;
+    background-image: linear-gradient(96deg, #483dec, #4074eb);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+.pricing-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4742ec;
+}
+
+.pricing-section .card-common {
+    border-radius: 6px;
+    border: solid 1px #dcdcdc;
+    background-color: #ffffff;
+}
+
+.pricing-section .card-basic {
+    border-radius: 6px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.11);
+    border: solid 1px #e9eeff;
+    background-color: #ffffff;
+}
+
+.pricing-bottom p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: .56;
+    letter-spacing: normal;
+    color: #222222;
+}
+
+
+.pricing-bottom {
+
+    border-top: solid 1px #dcdcdc;
+
+    padding: 22px 0px 6px 40px;
+}
+
+.card .common {
+    border-radius: 6px;
+    background-color: #e9eeff;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #4742ec;
+}
+
+.card .basic {
+    border-radius: 6px;
+    background-color: #4742ec;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.head-price {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4742ec;
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 0;
+
+}
+
+.card-body button {
+    margin: 30px 0px;
+}
+
+.card-title {
+    font-size: 67px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4742ec;
+    margin: 25px 0px;
+}
+
+.mo {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4742ec;
+}
+
+.offer li {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #222222;
+}
+
+.price-btn-common {
+    width: 216px;
+    height: 53px;
+    border-radius: 26.5px;
+    box-shadow: -3px 3px 20px 0 rgba(73, 66, 236, 0.33);
+    border: solid 1px #878787;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #878787;
+}
+
+.price-btn-basic {
+    width: 216px;
+    height: 53px;
+    border-radius: 26.5px;
+    box-shadow: -3px 3px 20px 0 rgba(73, 66, 236, 0.33);
+    background-image: linear-gradient(104deg, #483dec, #4074eb);
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.all-from-wrap {
+    padding: 0% 3% 0% 22%;
+}
+
+.plan-wrap {
+    padding: 0% 33% 10% 4%;
+}
+
+.act-item {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4742ec;
+}
+
+
+.profile-form p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+    line-height: 0.1em;
+    margin: 30px 0 30px;;
+}
+
+.profile-form p span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.pricing-header .close {
+    font-size: 2rem;
+}
+
+.modal-header {
+    border: none;
+}
+
+.card-header {
+    border: none;
+    text-transform: uppercase;
+}
+
+#myDropdown > a > span {
+    visibility: hidden;
+}
+
+#myDropdown > a.act-item > span {
+    visibility: visible;
+}
+
+.plan-bottom .for-yearly, .year {
+    display: none;
+}
